@@ -1,6 +1,6 @@
 # Satellite Image To Map Translation Using Conditional Generative Adversial Network #
 
-The project is keras implementation of pix-2pix neural network, It implements a conditional Generative Neural Network comprised of Deep CNN as a discriminator model 
+The project is keras implementation of pix-2pix neural network, It implements a conditional Generative Adversarial Neural Network comprised of Deep CNN as a discriminator model 
 and encoder decoder model as the Generator model.
 
 **Research Paper used for reference -** https://arxiv.org/abs/1611.07004
