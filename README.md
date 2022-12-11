@@ -58,9 +58,11 @@ Momentum (&beta;1 , &beta;2 ) -  (0.5, 0.999) <br>
 
 Results on the validation set - 
 
-1st Row - Satellite Image
-2nd Row - Generated 2D Image
-3rd Row - Real 2D Map Image
+* 1st Row - Satellite Image <br>
+* 2nd Row - Generated 2D Image   <br>
+* 3rd Row - Real 2D Map Image <br>
+
+![alt text](https://github.com/suryadanny/Satellite-2-Map-GAN/blob/main/visualisation/1.png?raw=true)
 
 
 
