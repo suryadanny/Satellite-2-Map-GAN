@@ -50,4 +50,17 @@ Momentum (&beta;1 , &beta;2 ) -  (0.5, 0.999) <br>
 * The disciminator model trains on real and the generator images. The model is initially trained in a standalone manner with real input and real output images, while the model is reused in the composite generative model.
 * The generator model is train using the discriminator model, the aim of the generator model is to minimize the loss from discriminator model, that is to generate more realistic representation of the input satellite images.
 * Generator is updated via weighted sum of both adversarial loss and L1 loss , 100 to 1 in favor of L1 loss, encouraging the generator to strongly generate more plausible generations of input the image.
-* The gan model is composite of the generator model called before the disciminator model , the discriminator model that has been already trained can be used 
+* The gan model is composite of the generator model called before the disciminator model , the discriminator model weights that has been already trained can be used while training the generator model in the GAN.
+* The composite gan model is updated with 2 targets, one defining the the generated images are real (binary cross entropy loss) , forcing large weight updates in the generator toward generating more realistic images, and the executed real translation of the image, which is compared against the output of the generator model (L1 loss).
+* In the GAN model, an equilibrium is reached between the generator and discriminator model at the end, which is when our training ends.
+
+## Results ##
+
+Results on the validation set - 
+
+1st Row - Satellite Image
+2nd Row - Generated 2D Image
+3rd Row - Real 2D Map Image
+
+
+
